@@ -1,0 +1,23 @@
+.PaginatonWrap {
+    position: absolute;
+    display: flex;
+    z-index: 11;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background-color: var(--blue-dark);
+    opacity: 0.5;
+    cursor: pointer;
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.active {
+    opacity: 1;
+    cursor: auto;
+}

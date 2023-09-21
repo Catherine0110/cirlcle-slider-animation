@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './styles/index.scss'
+import { CirlcleThemes } from './components/Cirlcle/Cirlcle'
+import History from './pages/History/History'
+import { SliderContent, SliderContent4, SliderPeriods, SliderPeriods4 } from './data/data'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <History activeElem={2} dotsNumb={6} period={SliderPeriods} content={SliderContent} />
+      <History
+        activeElem={1}
+        dotsNumb={4}
+        period={SliderPeriods4}
+        content={SliderContent4}
+        cirlcleTheme={CirlcleThemes.FOUR_DOTS}
+      />
+    </>
+  )
 }
 
-export default App;
+export default App

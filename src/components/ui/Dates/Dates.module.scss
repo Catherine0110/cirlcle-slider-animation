@@ -1,0 +1,35 @@
+.date {
+    font-size: var(--font-size-l);
+    line-height: var(--font-line-l);
+    font-weight: var(--font-weight-l);
+    width: max-content;
+    transition: 0.4s ease;
+}
+
+.start {
+    color: var(--blue);
+    margin-right: 25px;
+    transition: 0.4s ease;
+}
+.end {
+    color: var(--pink);
+    transition: 0.4s ease;
+}
+
+.isMobile {
+    &.date {
+        font-size: 125px;
+        line-height: normal;
+        padding: 45px 0;
+    }
+    .start {
+        margin-right: 10px;
+    }
+}
+
+.isMobileXs {
+    &.date {
+        padding: 0;
+        font-size: var(--font-size-m);
+    }
+}

@@ -1,0 +1,14 @@
+@import "reset";
+@import "global";
+
+
+body {
+    background-color: var(--gray);
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-m);
+    font-family: var(--font-family-main);
+    color: var(--blue-dark);
+}
+
+
+
